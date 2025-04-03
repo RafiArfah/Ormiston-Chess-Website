@@ -1,0 +1,283 @@
+li:hover {
+    color:aliceblue;
+}
+
+.header {
+    background-color:orange;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+}
+.header li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header ul {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.chess-table-container {
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+}
+
+.chess-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    min-width: 600px; 
+}
+
+.chess-table th, .chess-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.chess-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.chess-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+* {
+    font-family:arial;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.header-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    background-color: orange;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form input[type="text"], [type="password"], [type="email"] {
+    margin: 10px 0;
+    width: 75%;
+    padding:5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #fea042;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.info {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.info, .content {
+    text-align: justify;
+}
+
+.text-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.carousel-image {
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header-logo {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header li {
+        margin: 5px 0;
+    }
+
+    .header a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chess-table th, .chess-table td {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .chess-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .chess-table td {
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .chess-table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
